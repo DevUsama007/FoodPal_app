@@ -1,0 +1,123 @@
+import 'package:get/get.dart';
+
+class Language extends Translations {
+  @override
+  Map<String, Map<String, String>> get keys => {
+        'en_US': {
+          'splash_about': 'Delicious Discovers Await',
+          'intro_screen_one_heading': "Explore Restaurants",
+          'intro_screen_one_subheading':
+              "Discover a world of delight flavors at your fingertips ",
+          'intro_screen_one_btn': "Next",
+          'intro_screen_two_heading': "Easy Ordering",
+          'intro_screen_two_subheading':
+              "Browse menus, customize your order, and enjoy hassle-free delivery",
+          'intro_screen_two_btn': "Next",
+          'intro_screen_three_heading': "Fast delivery",
+          'intro_screen_three_subheading':
+              "Browse menus, customize your order, and enjoy hassle delivery",
+          'intro_screen_three_btn': "Get Started",
+          'onboarding_page_heading': "Welcome to Foodpal!",
+          'onboarding_page_subheading': 'The best restaurants at your home!',
+          'onboarding_page_google_btn': 'Continue with google',
+          'onboarding_page_apple_btn': 'Continue with Apple ID',
+          'onboarding_btn_one': 'sign with email or phone',
+          'onboarding_page_signup_btn': 'Dont have an account ?',
+          'login_text_field_email': 'Email or Phone',
+          'login_text_field_password': 'Password',
+          'login_btn_two': 'Login',
+          'sign_up_text': 'Sign up',
+          'create_acc_text': 'Create new account',
+          'sign_up_text_field_phone': 'phone',
+          'sign_up_text_field_email': 'Email',
+          'sign_up_text_field_Name': 'Name',
+          'sign_up_text_field_password': 'Password',
+          'sign_up_text_field_conf_password': 'Confirm Password',
+          'remember_me': 'Remember me',
+          'already_have_account': 'Already have an account?',
+          'register_btn': 'Sign up',
+
+//notification message
+          'error': 'Error',
+          'success': 'Success',
+          'error_message': 'Please fill the information',
+        },
+        'ur_PK': {
+          'splash_about': 'لذیذ دریافت کا انتظار',
+          'intro_screen_one_heading': "ریستوراں دریافت کریں",
+          'intro_screen_one_subheading':
+              "اپنی انگلیوں پر لذیند ذائقوں کی دنیا دریافت کریں",
+          'intro_screen_one_btn': "اگلا",
+          'intro_screen_two_heading': "آسان آرڈرنگ",
+          'intro_screen_two_subheading':
+              "مینو دیکھیں، اپنا آرڈر حسبِ مرضی بنائیں، اور پریشانی سے پہنچائیں",
+          'intro_screen_two_btn': "اگلا",
+          'intro_screen_three_heading': "تیز ترسیل",
+          'intro_screen_three_subheading':
+              "مینو دیکھیں، اپنا آرڈر حسبِ مرضی بنائیں، اور آسانی سے ترسیل حاصل کریں",
+          'intro_screen_three_btn': "شروع کریں",
+          'onboarding_page_heading': "فوڈپال میں خوش آمدید!",
+          'onboarding_page_subheading':
+              "گھر بیٹھے بہترین ریستوراں کا لطف اٹھائیں!",
+          'onboarding_page_google_btn': "گوگل کے ساتھ جاری رکھیں",
+          'onboarding_page_apple_btn': "ایپل آئی ڈی کے ساتھ جاری رکھیں",
+          'onboarding_btn_one': "ای میل یا فون سے لاگ ان کریں",
+          'onboarding_page_signup_btn': "کھاتہ نہیں ہے؟",
+          'login_text_field_email': "ای میل",
+          'login_text_field_password': "پاس ورڈ",
+          'login_btn': "لاگ ان کریں",
+          'sign_up_text_two': "سائن اپ کریں",
+          'create_acc_text': "نیا کھاتہ بنائیں",
+          'sign_up_text_field_phone': "فون",
+          'sign_up_text_field_email': "ای میل",
+          'sign_up_text_field_Name': "نام",
+          'sign_up_text_field_password': "پاس ورڈ",
+          'sign_up_text_field_conf_password': "پاس ورڈ کی تصدیق کریں",
+          'remember_me': "مجھے یاد رکھیں",
+          "already_have_account": "هل لديك حساب بالفعل؟",
+          'register_btn': "سائن اپ کریں",
+//notification message
+          'error': 'خرابی',
+          'success': 'کامیابی',
+          'error_message': 'براہ کرم معلومات درج کریں',
+        },
+        'arabic_SA': {
+          'splash_about': 'اكتشافات لذيذة تنتظرك',
+          'intro_screen_one_heading': 'استكشف المطاعم',
+          'intro_screen_one_subheading':
+              'اكتشف عالمًا من النكهات الساحرة في متناول يديك',
+          'intro_screen_one_btn': 'التالي',
+          'intro_screen_two_heading': 'طلب سهل',
+          'intro_screen_two_subheading':
+              'تصفح القوائم، خصّص طلبك، واستمتع بتوصيل خالٍ من المتاعب',
+          'intro_screen_two_btn': 'التالي',
+          'intro_screen_three_heading': 'توصيل سريع',
+          'intro_screen_three_subheading':
+              'تصفح القوائم، خصّص طلبك، واستمتع بتوصيل سريع',
+          'intro_screen_three_btn': 'ابدأ الآن',
+          'onboarding_page_heading': 'مرحبًا بكم في Foodpal!',
+          'onboarding_page_subheading': 'أفضل المطاعم في منزلك!',
+          'onboarding_page_google_btn': 'المتابعة مع جوجل',
+          'onboarding_page_apple_btn': 'المتابعة مع Apple ID',
+          'onboarding_btn_one': 'تسجيل الدخول عبر البريد أو الهاتف',
+          'onboarding_page_signup_btn': 'ليس لديك حساب؟',
+          'login_text_field_email': 'البريد الإلكتروني',
+          'login_text_field_password': 'كلمة المرور',
+          'login_btn_two': 'تسجيل الدخول',
+          'sign_up_text': 'إنشاء حساب',
+          'create_acc_text': 'إنشاء حساب جديد',
+          'sign_up_text_field_phone': 'الهاتف',
+          'sign_up_text_field_email': 'البريد الإلكتروني',
+          'sign_up_text_field_Name': 'الاسم',
+          'sign_up_text_field_password': 'كلمة المرور',
+          'sign_up_text_field_conf_password': 'تأكيد كلمة المرور',
+          'remember_me': 'تذكرني',
+          "already_have_account": "ألديك حساب مسبقاً؟",
+          'register_btn': 'إنشاء حساب',
+//notification message
+          'error': 'خطأ',
+          'success': 'نجاح',
+          'error_message': 'يرجى ملء المعلومات',
+        }
+      };
+}
