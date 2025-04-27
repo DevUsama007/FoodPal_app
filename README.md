@@ -1,16 +1,5 @@
-# foodpal
+# FoodPal - Food Delivery App UI 🍕📱
+A Flutter-based food ordering app UI with GetX state management and MVVM architecture for optimal performance and maintainability.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image alt](https://raw.githubusercontent.com/DevUsama007/FoodPal_app/refs/heads/main/foodPalimage2.png)
+![image alt](https://github.com/DevUsama007/FoodPal_app/blob/main/foodPalimage3.png)
