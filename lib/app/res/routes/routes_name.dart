@@ -13,7 +13,6 @@ class RouteName {
   static String bottomNavigatorFile = '/BottomNavigator';
   static String notificationScreen = '/NotificationScreen';
   static String myorderscreen = '/Myorderscreen';
-  static String cartScreen = '/CartScreen'; 
-  static String productDetailScreen = '/ProductDetailScreen'; 
-
+  static String cartScreen = '/CartScreen';
+  static String productDetailScreen = '/ProductDetailScreen';
 }

@@ -18,9 +18,9 @@ class BottomNavigator extends StatefulWidget {
 class _BottomNavigatorState extends State<BottomNavigator> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
-    HomeScreen(),
-    Myorderscreen(),
-    NotificationScreen(),
+    const HomeScreen(),
+    const Myorderscreen(),
+    const NotificationScreen(),
   ];
 
   void _onItemTapped(int index) {

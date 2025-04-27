@@ -3,6 +3,7 @@ import 'package:foodpal/app/view/best_offers.dart';
 import 'package:foodpal/app/view/best_sellers.dart';
 import 'package:foodpal/app/view/bottom_app_bar/bottom_navigation_bar.dart';
 import 'package:foodpal/app/view/cart_screen.dart';
+import 'package:foodpal/app/view/check_out_order.dart';
 import 'package:foodpal/app/view/home_screen.dart';
 import 'package:foodpal/app/view/introduction_screens/introduction_screen1.dart';
 import 'package:foodpal/app/view/introduction_screens/introduction_screen2.dart';
@@ -84,6 +85,7 @@ class AppRoutes {
           name: RouteName.productDetailScreen,
           page: () => ProductDetailScreen(title: '', subtitle: '', image: '', price: '', rating: null,),
           transition: Transition.rightToLeft),
+      
     ];
   }
 }

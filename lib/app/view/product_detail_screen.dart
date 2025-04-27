@@ -1,9 +1,14 @@
+import 'package:elegant_notification/elegant_notification.dart';
+import 'package:elegant_notification/resources/arrays.dart';
+import 'package:elegant_notification/resources/stacked_options.dart';
 import 'package:flutter/material.dart';
 import 'package:foodpal/app/custom_widget/animtedContainer.dart';
+import 'package:foodpal/app/custom_widget/bottom_sheet/custom_bottom_sheet.dart';
 import 'package:foodpal/app/custom_widget/custome_button.dart';
 import 'package:foodpal/app/res/app_colors/colors.dart';
 import 'package:foodpal/app/res/app_text_styles/app_text_styles.dart';
 import 'package:foodpal/app/res/assets/image_assets.dart';
+import 'package:foodpal/app/view/check_out_order.dart';
 import 'package:foodpal/app/view_model/animated_container_conroler.dart';
 import 'package:get/get.dart';
 
@@ -12,11 +17,11 @@ class ProductDetailScreen extends StatefulWidget {
   String title;
   String price;
   double? rating;
-  String? subtitle;
+  String subtitle;
   ProductDetailScreen(
       {super.key,
       required this.title,
-      this.subtitle,
+      required this.subtitle,
       required this.image,
       required this.price,
       this.rating});
@@ -50,9 +55,18 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   title: 'Order',
                   bgColor: Colors.black,
                   ontap: () {
-                    Get.back();
+                    CustomBottomSheet.show(
+                        backgroundColor: AppColor.white,
+                        context: context,
+                        child: CheckOutOrder(
+                          image: widget.image,
+                          price: widget.price,
+                          subtitle: widget.subtitle,
+                          title: widget.title,
+                        ));
                   },
                   textColor: Colors.white),
+                  
             ],
           ),
         ),

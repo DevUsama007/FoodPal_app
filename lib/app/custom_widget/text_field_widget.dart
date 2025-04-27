@@ -10,9 +10,11 @@ class CustomTextField extends StatefulWidget {
   final double? width;
   final double? height;
   final EdgeInsetsGeometry? contentPadding;
+  final int? lines;
 
-  const CustomTextField({
+  CustomTextField({
     super.key,
+    this.lines,
     required this.backgroundColor,
     this.prefixIcon,
     required this.hintText,
@@ -41,6 +43,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           });
         },
         child: TextField(
+          maxLines: widget.lines == null ? 1 : widget.lines,
           controller: widget.controller,
           decoration: InputDecoration(
             border: OutlineInputBorder(

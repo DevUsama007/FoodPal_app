@@ -14,7 +14,7 @@ class LoginScreenControler extends GetxController {
     } else {
       print(emailController.value.text.toString());
       print(passwordController.value.text.toString());
-
+      
       CustomSnackbar.showSuccess(
           showDismiss: false,
           title: emailController.value.text,
