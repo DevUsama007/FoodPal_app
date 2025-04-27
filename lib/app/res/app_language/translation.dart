@@ -41,6 +41,43 @@ class Language extends Translations {
           'error': 'Error',
           'success': 'Success',
           'error_message': 'Please fill the information',
+
+//homescreen text
+          'location_name': 'Rivertown Haven',
+          'search_your_food': 'Search Your Food',
+          'our_menu': 'Our menu',
+          'free_delivery': 'Free Delivery Within 20km!',
+          'order_now_btn': 'Order now',
+          'best_sellers': 'Best Sellars',
+          'best_offers': 'Best Offers',
+          'see_all': 'See all',
+          'family_feast': 'Family Feast',
+          'special_price': 'Special price on our family meal bundle!',
+          'restaurant_nearby': 'Restaurant nearby',
+          'view_all': 'View all',
+//My order screen
+          'my_orders': 'My Orders',
+          'search_order': 'Search Your Order',
+//Add to cart screen
+          'add_ones': 'Add Ones',
+          'add_cart': 'Add to cart',
+          'recent_search': 'Rescent search',
+//Drawer texts
+          'payment_methods': 'Payment Methods',
+          'rewards_offers': 'Rewards and Offers',
+          'order': "Order",
+          'setting': 'Settings',
+          'account': 'Account',
+          'logout': 'Logout',
+//My Cart screen
+          'delivery': 'Delivery',
+          'complete_your_meal': 'Complete your meal',
+          'buy_summary': 'Buy Summery',
+          'sub_total': 'Sub total',
+          'discount': 'Discount',
+          'delivery_fee': 'Delivery Fee',
+          'total_cost': 'Total Cost',
+          'pay': 'Pay',
         },
         'ur_PK': {
           'splash_about': 'لذیذ دریافت کا انتظار',
@@ -81,7 +118,7 @@ class Language extends Translations {
           'success': 'کامیابی',
           'error_message': 'براہ کرم معلومات درج کریں',
         },
-        'arabic_SA': {
+        'ar_SA': {
           'splash_about': 'اكتشافات لذيذة تنتظرك',
           'intro_screen_one_heading': 'استكشف المطاعم',
           'intro_screen_one_subheading':

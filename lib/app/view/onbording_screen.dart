@@ -60,7 +60,9 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
                 width: 4,
               ),
               InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed(RouteName.registerScreen);
+                  },
                   child: Text(
                     'sign_up_text'.tr,
                     style:

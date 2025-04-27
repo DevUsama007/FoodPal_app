@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.7.2
   flutter_svg: ^2.0.17
+  carousel_slider: ^5.0.0
+  dotted_border: ^2.1.0
+  animated_notch_bottom_bar: ^1.0.3
+  persistent_bottom_nav_bar_v2: ^5.3.1
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +67,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/food/
     - assets/svg/
   #   - images/a_dot_ham.jpeg
 

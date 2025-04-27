@@ -22,7 +22,7 @@ class _IntroductionScreen3State extends State<IntroductionScreen3> {
           subheading: 'intro_screen_three_subheading'.tr,
           btnText: 'intro_screen_three_btn'.tr,
           imagePath: AppAssets.image3,
-          onTap: () => Get.toNamed(RouteName.onbordingScreen),
+          onTap: () => Get.offNamed(RouteName.onbordingScreen),
         ));
   }
 }

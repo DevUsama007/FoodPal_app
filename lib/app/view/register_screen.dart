@@ -97,7 +97,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               InkWell(
                   onTap: () {
-                    Get.toNamed(RouteName.loginScreen);
+                    Get.offNamed(RouteName.loginScreen);
                   },
                   child: Text(
                     'login_btn_two'.tr,

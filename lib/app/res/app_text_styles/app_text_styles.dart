@@ -35,4 +35,12 @@ abstract class AppTextStyles {
       fontSize: 13,
     );
   }
+
+  static TextStyle customTextGrey10() {
+    return TextStyle(
+      color: AppColor.grey,
+      fontFamily: AppFonts.montserrat,
+      fontSize: 10,
+    );
+  }
 }

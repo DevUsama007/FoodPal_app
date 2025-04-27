@@ -19,7 +19,8 @@ class LoginScreenControler extends GetxController {
           showDismiss: false,
           title: emailController.value.text,
           message: passwordController.value.text);
-      Get.offNamed(RouteName.homeScreen);
+      Get.offNamed(RouteName.bottomNavigatorFile);
+      // Get.toNamed(RouteName.homeScreen);
     }
   }
 }

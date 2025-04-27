@@ -77,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   InkWell(
                       onTap: () {
-                        Get.toNamed(RouteName.registerScreen);
+                        Get.offNamed(RouteName.registerScreen);
                       },
                       child: Text(
                         'sign_up_text'.tr,

@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     Future.delayed(Duration(seconds: 3), () {
-      Get.toNamed(RouteName.introduction_screen1);
+      Get.offNamed(RouteName.introduction_screen1);
       print("object time completed");
     });
   }
