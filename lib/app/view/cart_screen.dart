@@ -4,6 +4,7 @@ import 'package:foodpal/app/custom_widget/custom_appbar.dart';
 import 'package:foodpal/app/custom_widget/myCartWidget.dart';
 import 'package:foodpal/app/model/generic_model.dart/myOrdersModel.dart';
 import 'package:foodpal/app/res/assets/image_assets.dart';
+import 'package:foodpal/app/view/product_detail_screen.dart';
 import 'package:get/get.dart';
 
 class CartScreen extends StatefulWidget {
@@ -30,13 +31,24 @@ class _CartScreenState extends State<CartScreen> {
               children: List.generate(
                 MyOrdersModel.allOrdersList.length,
                 (index) {
-                  return Mycartwidget(
-                          image: MyOrdersModel.allOrdersList[index].image,
+                  return InkWell(
+                    onTap: () {
+                      print("object");
+                      Get.to(ProductDetailScreen(
                           title: MyOrdersModel.allOrdersList[index].title,
-                          offPrice: '20%off',
+                          subtitle: "Product detail is not available this time",
+                          image: MyOrdersModel.allOrdersList[index].image,
                           price: MyOrdersModel.allOrdersList[index].amount
-                              .toString())
-                      .paddingOnly(bottom: 10);
+                              .toString()));
+                    },
+                    child: Mycartwidget(
+                            image: MyOrdersModel.allOrdersList[index].image,
+                            title: MyOrdersModel.allOrdersList[index].title,
+                            offPrice: '20%off',
+                            price: MyOrdersModel.allOrdersList[index].amount
+                                .toString())
+                        .paddingOnly(bottom: 10),
+                  );
                 },
               )),
         ),

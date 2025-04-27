@@ -4,6 +4,7 @@ import 'package:foodpal/app/custom_widget/custom_appbar.dart';
 import 'package:foodpal/app/custom_widget/restaurant_nearby_detail_widget.dart';
 import 'package:foodpal/app/model/generic_model.dart/restaurant_nearby_model.dart';
 import 'package:foodpal/app/res/app_text_styles/app_text_styles.dart';
+import 'package:foodpal/app/view/product_detail_screen.dart';
 import 'package:get/get.dart';
 
 class RestaurantNearbyScreen extends StatefulWidget {
@@ -26,11 +27,20 @@ class _RestaurantNearbyScreenState extends State<RestaurantNearbyScreen> {
           children: List.generate(
             RestaurantNearbyModel.allOffersList.length,
             (index) {
-              return RestaurantNearbyDetailWidget(
-                  imagepath: RestaurantNearbyModel.allOffersList[index].image,
-                  likes: RestaurantNearbyModel.allOffersList[index].likes,
-                  locaiton: RestaurantNearbyModel.allOffersList[index].location,
-                  title: RestaurantNearbyModel.allOffersList[index].title);
+              return InkWell(
+                onTap: () => Get.to(ProductDetailScreen(
+                    rating: 4.8,
+                    title: RestaurantNearbyModel.allOffersList[index].title,
+                    subtitle: 'The detail about the product not available',
+                    image: RestaurantNearbyModel.allOffersList[index].image,
+                    price: '\$12.29')),
+                child: RestaurantNearbyDetailWidget(
+                    imagepath: RestaurantNearbyModel.allOffersList[index].image,
+                    likes: RestaurantNearbyModel.allOffersList[index].likes,
+                    locaiton:
+                        RestaurantNearbyModel.allOffersList[index].location,
+                    title: RestaurantNearbyModel.allOffersList[index].title),
+              );
             },
           ),
         ),

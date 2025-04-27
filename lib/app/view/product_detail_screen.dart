@@ -66,7 +66,6 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         ));
                   },
                   textColor: Colors.white),
-                  
             ],
           ),
         ),
@@ -75,47 +74,49 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         toolbarHeight: 30,
         backgroundColor: Colors.white,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-              width: Get.width,
-              height: 200,
-              color: Colors.white,
-              child: Image.asset(widget.image).marginSymmetric(vertical: 20)),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  widget.title,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTextStyles.customText(
-                      fontSize: 16, fontWeight: FontWeight.bold),
-                ),
-                Text('Price: ${widget.price}       Rating: ${widget.rating}',
-                        style: AppTextStyles.customText(
-                            fontSize: 12, fontWeight: FontWeight.bold))
-                    .paddingSymmetric(vertical: 10),
-                CustomAnimatedContainer(
-                  text: widget.subtitle.toString(),
-                  ontap: () {
-                    controler.changeHeight();
-                  },
-                ),
-                Text(
-                  'Add ones',
-                  style: AppTextStyles.customText(
-                      fontSize: 16, fontWeight: FontWeight.bold),
-                ),
-                addOnes()
-              ],
-            ),
-          )
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+                width: Get.width,
+                height: 200,
+                color: Colors.white,
+                child: Image.asset(widget.image).marginSymmetric(vertical: 20)),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    widget.title,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTextStyles.customText(
+                        fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                  Text('Price: ${widget.price}       Rating: ${widget.rating}',
+                          style: AppTextStyles.customText(
+                              fontSize: 12, fontWeight: FontWeight.bold))
+                      .paddingSymmetric(vertical: 10),
+                  CustomAnimatedContainer(
+                    text: widget.subtitle.toString(),
+                    ontap: () {
+                      controler.changeHeight();
+                    },
+                  ),
+                  Text(
+                    'Add ones',
+                    style: AppTextStyles.customText(
+                        fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                  addOnes()
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
