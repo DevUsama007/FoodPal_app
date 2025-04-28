@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodpal/app/res/routes/routes_name.dart';
+import 'package:foodpal/app/utils/notification.dart';
 import 'package:foodpal/app/utils/snackbar.dart';
 import 'package:get/get.dart';
 
@@ -10,16 +11,19 @@ class RegisterScreeContoler extends GetxController {
   final email_controller = TextEditingController();
   final name_controller = TextEditingController();
 
-  validation() {
+  validation(BuildContext context) {
     if (phone_controller.value.text.isEmpty ||
         email_controller.value.text.isEmpty ||
         name_controller.value.text.isEmpty) {
-      CustomSnackbar.showError(title: "error".tr, message: "error_message".tr);
+      CustomNotification.showErrorNotification(
+          context: context,
+          title: 'Field Error',
+          subtitle: 'Please check the field');
     } else {
-      CustomSnackbar.showSuccess(
-          showDismiss: false,
-          title: email_controller.value.text,
-          message: phone_controller.value.text);
+      CustomNotification.showSuccessNotification(
+          context: context,
+          title: 'Register Successfuly',
+          subtitle: 'WELCOME TO FOODPAL');
 
       Get.offNamed(RouteName.bottomNavigatorFile);
     }

@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   .paddingOnly(bottom: 10),
               CustomeBtn1(
                 btnText: "login_btn_two".tr,
-                onTap: () => controler.validation(),
+                onTap: () => controler.validation(context),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

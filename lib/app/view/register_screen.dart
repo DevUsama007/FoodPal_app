@@ -37,12 +37,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 fontWeight: FontWeight.bold, fontSize: 18),
           ).paddingSymmetric(vertical: 10),
           CustomTextField(
+                  inputTypeNumber: true,
                   width: Get.width * 0.9,
                   height: 40,
                   controller: contoler.phone_controller,
                   prefixIcon: Icons.phone,
                   backgroundColor: Colors.white,
-                  hintText: "sign_up_text_field_email".tr)
+                  hintText: "sign_up_text_field_phone".tr)
               .paddingOnly(bottom: 10),
           CustomTextField(
                   width: Get.width * 0.9,
@@ -62,7 +63,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               .paddingOnly(bottom: 10),
           CustomeBtn1(
             btnText: "sign_up_text".tr,
-            onTap: () => contoler.validation(),
+            onTap: () => contoler.validation(context),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
