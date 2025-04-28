@@ -2,6 +2,7 @@ import 'package:elegant_notification/elegant_notification.dart';
 import 'package:elegant_notification/resources/arrays.dart';
 import 'package:elegant_notification/resources/stacked_options.dart';
 import 'package:flutter/material.dart';
+import 'package:foodpal/app/res/app_text_styles/app_text_styles.dart';
 import 'package:get/get_connect/http/src/interceptors/get_modifiers.dart';
 
 class CustomNotification {
@@ -20,8 +21,14 @@ class CustomNotification {
       ),
       position: Alignment.topCenter,
       animation: AnimationType.fromTop,
-      title: Text(title),
-      description: Text(subtitle),
+      title: Text(
+        title,
+        style:
+            AppTextStyles.customText(fontSize: 14, fontWeight: FontWeight.w500),
+      ),
+      description: Text(subtitle,
+          style: AppTextStyles.customText(
+              fontSize: 14, fontWeight: FontWeight.w400)),
       onDismiss: () {},
       onNotificationPressed: () {},
     ).show(context);
@@ -42,8 +49,16 @@ class CustomNotification {
       ),
       position: Alignment.topCenter,
       animation: AnimationType.fromTop,
-      title: Text(title),
-      description: Text(subtitle),
+      title: Text(
+        title,
+        style:
+            AppTextStyles.customText(fontSize: 14, fontWeight: FontWeight.w500),
+      ),
+      description: Text(
+        subtitle,
+        style:
+            AppTextStyles.customText(fontSize: 14, fontWeight: FontWeight.w400),
+      ),
       onDismiss: () {},
       onNotificationPressed: () {},
     ).show(context);
